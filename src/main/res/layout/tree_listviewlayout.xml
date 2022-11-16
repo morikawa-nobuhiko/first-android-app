@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/treeNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/dp_s"
+        android:padding="@dimen/dp_m"
+        android:textSize="@dimen/sp_m" />
+
+    <TextView
+        android:id="@+id/treeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/dp_s"
+        android:padding="@dimen/dp_m"
+        android:textSize="@dimen/sp_m"
+        />
+
+    <TextView
+        android:id="@+id/treeSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:singleLine="true"
+        android:gravity="right"
+        android:padding="@dimen/dp_m"
+        android:textSize="@dimen/sp_m" />
+
+    <TextView
+        android:id="@+id/treeRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:singleLine="true"
+        android:gravity="left"
+        android:padding="@dimen/dp_m"
+        android:textSize="@dimen/sp_m" />
+</LinearLayout>

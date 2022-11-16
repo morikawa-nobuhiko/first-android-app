@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreeContActivity">
+
+    <Button
+        android:id="@+id/treeSizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:onClick="treeSize"
+        android:text="サイズ"
+        app:layout_constraintStart_toEndOf="@+id/treeContSize"
+        app:layout_constraintTop_toBottomOf="@+id/treeListButton" />
+
+    <EditText
+        android:id="@+id/treeContNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/no"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/treeContName"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/treeName"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treeContNo" />
+
+    <EditText
+        android:id="@+id/treeContSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/treeSize"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treeContName" />
+
+    <EditText
+        android:id="@+id/treeContRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/treeRemark"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treeContSize" />
+
+    <Button
+        android:id="@+id/contTreeCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="contTreeCancel"
+        android:text="@string/contTreeCancel"
+        app:layout_constraintStart_toEndOf="@+id/contTreeDeleteButton"
+        app:layout_constraintTop_toBottomOf="@+id/treeContRemark" />
+
+    <Button
+        android:id="@+id/treeListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:onClick="treeList"
+        android:text="@string/treeList"
+        app:layout_constraintStart_toEndOf="@+id/treeContName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/contTreeUpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="contTreeUpdate"
+        android:text="更新"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treeContRemark" />
+
+    <Button
+        android:id="@+id/contTreeDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="contTreeDelete"
+        android:text="削除"
+        app:layout_constraintStart_toEndOf="@+id/contTreeUpdateButton"
+        app:layout_constraintTop_toBottomOf="@+id/treeContRemark" />
+
+</android.support.constraint.ConstraintLayout>

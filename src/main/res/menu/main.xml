@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.androidmenutest.app.MainActivity">
+
+    <item
+        android:id="@+id/main_menu_samplebutton"
+        android:title="（デ）追加"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/main_menu_listtree"
+        android:title="樹種"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/main_menu_newbutton"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="追加"
+        app:showAsAction="always" />
+
+
+</menu>

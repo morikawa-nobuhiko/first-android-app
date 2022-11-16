@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.androidmenutest.app.TreeActivity" >
+
+    <!--<item-->
+        <!--android:id="@+id/tree_menu_new"-->
+        <!--android:title="@string/main_menu_item1"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/tree_menu_addmanytree"
+        android:title="@string/manytree"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tree_menu_export"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/firstTree"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tree_menu_first"
+        android:icon="@android:drawable/arrow_up_float"
+        android:title="@string/firstTree"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tree_menu_last"
+        android:icon="@android:drawable/arrow_down_float"
+        android:title="@string/lastTree"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/tree_menu_newbutton"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/addtree"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_m"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_s"
+            android:layout_marginBottom="@dimen/dp_s"
+            android:padding="@dimen/dp_m"
+            android:background ="@color/title"
+            android:text="@string/title1"/>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_m"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_s"
+            android:layout_marginBottom="@dimen/dp_s"
+            android:padding="@dimen/dp_m"
+            android:background ="@color/title"
+            android:text="@string/title2"/>
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_m"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_s"
+            android:layout_marginBottom="@dimen/dp_s"
+            android:padding="@dimen/dp_m"
+            android:background ="@color/title"
+            android:text="@string/title3"/>
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_m"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_s"
+            android:padding="@dimen/dp_m"
+            android:background ="@color/title"
+            android:text="@string/title4"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOwner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
